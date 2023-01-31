@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using RentACarWebApp.data;
+using otoGaleriWebApp.data;
 
-namespace RentACarWebApp
+namespace otoGaleriWebApp
 {
     public partial class main : System.Web.UI.Page
     {
@@ -14,20 +14,19 @@ namespace RentACarWebApp
         {
             mydata veriler = new mydata();
 
-            Marka m1 = new Marka();
+            marka m1 = new marka();
             m1.markaadi = "mercedes";
             m1.markaid = 3;
             m1.markaimageurl = "img/mercedes.png";
 
             mydata.markalar.Add(m1);
 
-           
+
 
             img1.ImageUrl = mydata.markalar[0].markaimageurl;
             lblModel1.Text = mydata.markalar[0].markaadi;
-            img2.ImageUrl = mydata.markalar[2].markaimageurl;
-            lblModel2.Text = mydata.markalar[2].markaadi;
-
+            img2.ImageUrl = mydata.markalar[1].markaimageurl;
+            lblModel2.Text = mydata.markalar[1].markaadi;
 
         }
     }

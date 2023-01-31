@@ -78,6 +78,7 @@
     <Content Include="img\Mercedes.png" />
     <Content Include="img\moka11.png" />
     <Content Include="main.aspx" />
+    <Content Include="modelekle.aspx" />
     <Content Include="modeller.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -98,6 +99,13 @@
     </Compile>
     <Compile Include="main.aspx.designer.cs">
       <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modelekle.aspx.cs">
+      <DependentUpon>modelekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modelekle.aspx.designer.cs">
+      <DependentUpon>modelekle.aspx</DependentUpon>
     </Compile>
     <Compile Include="modeller.aspx.cs">
       <DependentUpon>modeller.aspx</DependentUpon>

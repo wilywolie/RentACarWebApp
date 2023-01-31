@@ -3,26 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace RentACarWebApp.data
+namespace otoGaleriWebApp.data
 {
-    public class Marka
+    public class marka
     {
-        public Marka()
+        public marka()//constructor
         {
 
         }
-        public Marka(int _markaid, string _markaadi, string _markaimageurl)
+        public marka(int _markaid, string _markaadi, string _markaimageurl)//constructor
         {
             markaid = _markaid;
             markaadi = _markaadi;
             markaimageurl = _markaimageurl;
 
         }
-        public int markaid { get; set; }
-        public string markaadi { get; set; }
-        public string markaimageurl { get; set; }
 
-
+        public int markaid { set; get; }
+        public string markaadi { set; get; }
+        public string markaimageurl { set; get; }
+        //List<model> modeller = new List<model>();
 
     }
 }

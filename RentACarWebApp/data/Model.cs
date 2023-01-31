@@ -1,36 +1,37 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace RentACarWebApp.data
+namespace otoGaleriWebApp.data
 {
-    public class Model
+    public enum yakit
     {
-        public enum yakit
-        {
-            benzin,
-            mazot,
-            hibrit,
-            otogaz
-        }
-        public Model()
+        benzin,
+        mazot,
+        hibrit,
+        otogaz
+    }
+
+    public class model
+    {
+        public model()
         {
 
         }
-        public Model(int _modelid, string _modeladi, string _modelimrul, Marka _marrkasi)
+        public model(int _modelid, string _modeladi, string _modelimurl, marka _markasi)
         {
             modelid = _modelid;
             modeladi = _modeladi;
-            modelimageurl = _modelimrul;
-            markasi = _marrkasi;
+            modelimageurl = _modelimurl;
+            markasi = _markasi;
         }
-        public int modelid { get; set; }
-        public int modelyili { get; set; }
-        public string modeladi { get; set; }
-        public yakit yakitturu { get; set; }
-        public string modelimageurl { get; set; }
-        public Marka markasi { get; set; }
-
+        public int modelid { set; get; }
+        public string modeladi { set; get; }
+        public yakit yakitturu { set; get; }
+        public int modelyili { set; get; }
+        public string modelimageurl { set; get; }
+        public marka markasi { get; set; }
     }
 }

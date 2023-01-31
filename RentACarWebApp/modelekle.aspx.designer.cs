@@ -11,43 +11,52 @@ namespace otoGaleriWebApp
 {
 
 
-    public partial class main
+    public partial class modelekle
     {
 
         /// <summary>
-        /// img1 control.
+        /// txtMarkaAdi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image img1;
+        protected global::System.Web.UI.WebControls.TextBox txtMarkaAdi;
 
         /// <summary>
-        /// lblModel1 control.
+        /// txtMarkaId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblModel1;
+        protected global::System.Web.UI.WebControls.TextBox txtMarkaId;
 
         /// <summary>
-        /// img2 control.
+        /// ddlMarkalar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image img2;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMarkalar;
 
         /// <summary>
-        /// lblModel2 control.
+        /// fileResim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblModel2;
+        protected global::System.Web.UI.WebControls.FileUpload fileResim;
+
+        /// <summary>
+        /// btn1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn1;
     }
 }
